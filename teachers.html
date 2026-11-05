@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teachers</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #1976d2;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        td {
+            border: 1px solid #999;
+            padding: 13px;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #dceeff;
+        }
+
+        /* LARGE FACULTY IMAGE */
+        .teacher-img {
+            width: 350px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid #1976d2;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        .photo-cell {
+            width: 380px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>👩‍🏫 Teachers Management</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="course.html">Course</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>Teachers Details</h2>
+
+    <table>
+
+        <tr>
+            <th>Photo</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Subject / Position</th>
+            <th>Experience</th>
+        </tr>
+
+        <!-- 1 -->
+        <tr>
+            <td rowspan="15" class="photo-cell">
+                <img src="images/faculty.jpg"
+                     alt="School Faculty"
+                     class="teacher-img">
+            </td>
+
+            <td>T101</td>
+            <td>Ramesh Kumar</td>
+            <td>Mathematics Teacher</td>
+            <td>12 Years</td>
+        </tr>
+
+        <!-- 2 -->
+        <tr>
+            <td>T102</td>
+            <td>Priya Devi</td>
+            <td>Science Teacher</td>
+            <td>10 Years</td>
+        </tr>
+
+        <!-- 3 -->
+        <tr>
+            <td>T103</td>
+            <td>Suresh Rao</td>
+            <td>English Teacher</td>
+            <td>14 Years</td>
+        </tr>
+
+        <!-- 4 -->
+        <tr>
+            <td>T104</td>
+            <td>Anitha Sharma</td>
+            <td>Telugu Teacher</td>
+            <td>11 Years</td>
+        </tr>
+
+        <!-- 5 -->
+        <tr>
+            <td>T105</td>
+            <td>Mahesh Singh</td>
+            <td>Hindi Teacher</td>
+            <td>9 Years</td>
+        </tr>
+
+        <!-- 6 -->
+        <tr>
+            <td>T106</td>
+            <td>Ravi Prakash</td>
+            <td>Social Studies Teacher</td>
+            <td>13 Years</td>
+        </tr>
+
+        <!-- 7 -->
+        <tr>
+            <td>T107</td>
+            <td>Kiran Kumar</td>
+            <td>Computer Science Teacher</td>
+            <td>8 Years</td>
+        </tr>
+
+        <!-- 8 -->
+        <tr>
+            <td>T108</td>
+            <td>Vijay Kumar</td>
+            <td>Physical Education</td>
+            <td>10 Years</td>
+        </tr>
+
+        <!-- 9 -->
+        <tr>
+            <td>T109</td>
+            <td>Sunitha Reddy</td>
+            <td>Primary School Teacher</td>
+            <td>7 Years</td>
+        </tr>
+
+        <!-- 10 -->
+        <tr>
+            <td>T110</td>
+            <td>Lavanya Rao</td>
+            <td>Primary School Teacher</td>
+            <td>6 Years</td>
+        </tr>
+
+        <!-- 11 -->
+        <tr>
+            <td>T111</td>
+            <td>Harini Devi</td>
+            <td>Primary School Teacher</td>
+            <td>8 Years</td>
+        </tr>
+
+        <!-- 12 -->
+        <tr>
+            <td>T112</td>
+            <td>Prakash Reddy</td>
+            <td>Head Master</td>
+            <td>20 Years</td>
+        </tr>
+
+        <!-- 13 -->
+        <tr>
+            <td>T113</td>
+            <td>Sujatha Rao</td>
+            <td>Vice Principal</td>
+            <td>18 Years</td>
+        </tr>
+
+        <!-- 14 -->
+        <tr>
+            <td>T114</td>
+            <td>Krishna Murthy</td>
+            <td>Principal</td>
+            <td>25 Years</td>
+        </tr>
+
+        <!-- 15 -->
+        <tr>
+            <td>T115</td>
+            <td>Meena Kumari</td>
+            <td>Primary Section Head</td>
+            <td>16 Years</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<footer>
+    © 2026 Mahesh Babu School of Excellence
+</footer>
+
+</body>
+</html>

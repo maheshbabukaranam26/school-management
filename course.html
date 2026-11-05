@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .course-img {
+            width: 400px;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid #1976d2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-photo {
+            width: 430px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Courses Offered</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="course.html">Course</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>Available Subjects</h2>
+
+    <table>
+
+        <tr>
+            <th>Image</th>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+            <th>Teacher</th>
+        </tr>
+
+        <tr>
+            <td rowspan="10" class="course-photo">
+                <img src="images/courses.jpg"
+                     alt="Courses"
+                     class="course-img">
+            </td>
+
+            <td>C101</td>
+            <td>Mathematics</td>
+            <td>Ramesh Kumar</td>
+        </tr>
+
+        <tr>
+            <td>C102</td>
+            <td>Science</td>
+            <td>Priya Devi</td>
+        </tr>
+
+        <tr>
+            <td>C103</td>
+            <td>English</td>
+            <td>Suresh Rao</td>
+        </tr>
+
+        <tr>
+            <td>C104</td>
+            <td>Telugu</td>
+            <td>Anitha Sharma</td>
+        </tr>
+
+        <tr>
+            <td>C105</td>
+            <td>Hindi</td>
+            <td>Mahesh Singh</td>
+        </tr>
+
+        <tr>
+            <td>C106</td>
+            <td>Social Studies</td>
+            <td>Ravi Prakash</td>
+        </tr>
+
+        <tr>
+            <td>C107</td>
+            <td>Computer Science</td>
+            <td>Kiran Kumar</td>
+        </tr>
+
+        <tr>
+            <td>C108</td>
+            <td>General Knowledge</td>
+            <td>Sunitha Reddy</td>
+        </tr>
+
+        <tr>
+            <td>C109</td>
+            <td>Physical Education</td>
+            <td>Vijay Kumar</td>
+        </tr>
+
+        <tr>
+            <td>C110</td>
+            <td>Art &amp; Craft</td>
+            <td>Meena Kumari</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button onclick="courseMessage()">
+        View Courses
+    </button>
+
+</div>
+
+<footer>
+    © 2026 Mahesh Babu School of Excellence
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

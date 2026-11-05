@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #1976d2;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        td {
+            border: 1px solid #999;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #dceeff;
+        }
+
+        /* BIG STUDENT IMAGE */
+        .student-img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid #1976d2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo-cell {
+            width: 330px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>👨‍🎓 Students Management</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="course.html">Course</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>Student Details</h2>
+
+    <table>
+
+        <tr>
+            <th>Photo</th>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+        </tr>
+
+        <!-- Student 1 -->
+        <tr>
+            <td rowspan="100" class="photo-cell">
+                <img src="images/students.jpg"
+                     alt="Students"
+                     class="student-img">
+            </td>
+
+            <td>101</td>
+            <td>Rahul</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Mahesh</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Ravi</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Sai</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>105</td>
+            <td>Arjun</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>106</td>
+            <td>Kiran</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>107</td>
+            <td>Vijay</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>108</td>
+            <td>Ramesh</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>109</td>
+            <td>Ajay</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>110</td>
+            <td>Rohit</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>111</td>
+            <td>Praveen</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>112</td>
+            <td>Manoj</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>113</td>
+            <td>Suresh</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>114</td>
+            <td>Naresh</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>115</td>
+            <td>Harish</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>116</td>
+            <td>Tarun</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>117</td>
+            <td>Varun</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>118</td>
+            <td>Akash</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>119</td>
+            <td>Vamsi</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>120</td>
+            <td>Teja</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>121</td>
+            <td>Surya</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>122</td>
+            <td>Chandu</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>123</td>
+            <td>Naveen</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>124</td>
+            <td>Ganesh</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>125</td>
+            <td>Lokesh</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>126</td>
+            <td>Dinesh</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>127</td>
+            <td>Rakesh</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>128</td>
+            <td>Yash</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>129</td>
+            <td>Varsha</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>130</td>
+            <td>Pooja</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>131</td>
+            <td>Priya</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>132</td>
+            <td>Divya</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>133</td>
+            <td>Keerthi</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>134</td>
+            <td>Swathi</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>135</td>
+            <td>Deepika</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>136</td>
+            <td>Harini</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>137</td>
+            <td>Anusha</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>138</td>
+            <td>Lavanya</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>139</td>
+            <td>Bhavya</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>140</td>
+            <td>Sneha</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>141</td>
+            <td>Meghana</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>142</td>
+            <td>Tejaswi</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>143</td>
+            <td>Shreya</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>144</td>
+            <td>Neha</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>145</td>
+            <td>Swetha</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>146</td>
+            <td>Aishwarya</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>147</td>
+            <td>Bhargavi</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>148</td>
+            <td>Sirisha</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>149</td>
+            <td>Manasa</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>150</td>
+            <td>Rachana</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>151</td>
+            <td>Abhinav</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>152</td>
+            <td>Aditya</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>153</td>
+            <td>Rohan</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>154</td>
+            <td>Rahul Kumar</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>155</td>
+            <td>Raju</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>156</td>
+            <td>Ranjith</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>157</td>
+            <td>Rohith</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>158</td>
+            <td>Sandeep</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>159</td>
+            <td>Santhosh</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>160</td>
+            <td>Shankar</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>161</td>
+            <td>Abhishek</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>162</td>
+            <td>Manish</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>163</td>
+            <td>Pranav</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>164</td>
+            <td>Prakash</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>165</td>
+            <td>Krishna</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>166</td>
+            <td>Mohan</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>167</td>
+            <td>Gopal</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>168</td>
+            <td>Hari</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>169</td>
+            <td>Suraj</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>170</td>
+            <td>Vivek</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>171</td>
+            <td>Vishal</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>172</td>
+            <td>Raghu</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>173</td>
+            <td>Aravind</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>174</td>
+            <td>Chaitanya</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>175</td>
+            <td>Rohini</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>176</td>
+            <td>Soumya</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>177</td>
+            <td>Akshara</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>178</td>
+            <td>Amulya</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>179</td>
+            <td>Navya</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>180</td>
+            <td>Nandini</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>181</td>
+            <td>Ramya</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>182</td>
+            <td>Kavya</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>183</td>
+            <td>Keerthana</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>184</td>
+            <td>Sruthi</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>185</td>
+            <td>Akshaya</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>186</td>
+            <td>Bhavana</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>187</td>
+            <td>Shalini</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>188</td>
+            <td>Archana</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>189</td>
+            <td>Jyothi</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>190</td>
+            <td>Reshma</td>
+            <td>9</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>191</td>
+            <td>Sandhya</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>192</td>
+            <td>Monika</td>
+            <td>10</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>193</td>
+            <td>Harsha</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>194</td>
+            <td>Rithika</td>
+            <td>8</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>195</td>
+            <td>Sowmya</td>
+            <td>10</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>196</td>
+            <td>Pranitha</td>
+            <td>9</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>197</td>
+            <td>Hasini</td>
+            <td>8</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>198</td>
+            <td>Likitha</td>
+            <td>10</td>
+            <td>B</td>
+        </tr>
+
+        <tr>
+            <td>199</td>
+            <td>Hema</td>
+            <td>9</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>200</td>
+            <td>Riya</td>
+            <td>8</td>
+            <td>C</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<footer>
+    © 2026 Mahesh Babu School of Excellence
+</footer>
+
+</body>
+</html>

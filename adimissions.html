@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>School Admissions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .admission-form {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .admission-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .admission-form input,
+        .admission-form select,
+        .admission-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .admission-form input:focus,
+        .admission-form select:focus,
+        .admission-form textarea:focus {
+            outline: none;
+            border-color: #1976d2;
+            box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+        }
+
+        .admission-form textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .admission-form button {
+            padding: 12px 30px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #1976d2;
+        }
+
+        .submit-btn:hover {
+            background-color: #0d47a1;
+        }
+
+        .reset-btn {
+            background-color: #757575;
+        }
+
+        .reset-btn:hover {
+            background-color: #424242;
+        }
+
+        .admission-image {
+            width: 400px;
+            max-width: 90%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            border: 5px solid #1976d2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 600px) {
+            .admission-form {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .admission-form button {
+                width: 100%;
+            }
+
+            .admission-image {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎓 School Admissions</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="course.html">Course</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>Admission Form</h2>
+
+    <img src="images/admission.jpg"
+         alt="School Admissions"
+         class="admission-image">
+
+    <form class="admission-form"
+          action="#"
+          method="post"
+          id="admissionForm">
+
+        <label for="studentName">Student Name</label>
+
+        <input type="text"
+               id="studentName"
+               name="studentName"
+               placeholder="Enter student name"
+               required
+               autocomplete="name">
+
+
+        <label for="dob">Date of Birth</label>
+
+        <input type="date"
+               id="dob"
+               name="dob"
+               required>
+
+
+        <label for="gender">Gender</label>
+
+        <select id="gender"
+                name="gender"
+                required>
+
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+
+        <label for="class">Class</label>
+
+        <select id="class"
+                name="class"
+                required>
+
+            <option value="">Select Class</option>
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+            <option value="4">Class 4</option>
+            <option value="5">Class 5</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+
+        </select>
+
+
+        <label for="section">Section</label>
+
+        <select id="section"
+                name="section">
+
+            <option value="">Select Section</option>
+            <option value="A">Section A</option>
+            <option value="B">Section B</option>
+            <option value="C">Section C</option>
+
+        </select>
+
+
+        <label for="fatherName">Father's Name</label>
+
+        <input type="text"
+               id="fatherName"
+               name="fatherName"
+               placeholder="Enter father's name"
+               required>
+
+
+        <label for="motherName">Mother's Name</label>
+
+        <input type="text"
+               id="motherName"
+               name="motherName"
+               placeholder="Enter mother's name"
+               required>
+
+
+        <label for="phone">Parent Contact Number</label>
+
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter 10-digit contact number"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               required
+               autocomplete="tel">
+
+
+        <label for="email">Parent Email</label>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter email address"
+               autocomplete="email">
+
+
+        <label for="previousSchool">Previous School</label>
+
+        <input type="text"
+               id="previousSchool"
+               name="previousSchool"
+               placeholder="Enter previous school name">
+
+
+        <label for="address">Address</label>
+
+        <textarea id="address"
+                  name="address"
+                  placeholder="Enter complete address"
+                  required></textarea>
+
+
+        <label for="course">Preferred Course</label>
+
+        <select id="course"
+                name="course">
+
+            <option value="">Select Course</option>
+            <option value="General">General Education</option>
+            <option value="Science">Science</option>
+            <option value="Computer">Computer Science</option>
+            <option value="Mathematics">Mathematics</option>
+
+        </select>
+
+
+        <div class="button-group">
+
+            <button type="submit"
+                    class="submit-btn">
+                Submit Admission
+            </button>
+
+            <button type="reset"
+                    class="reset-btn">
+                Clear Form
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Mahesh Babu School of Excellence
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
